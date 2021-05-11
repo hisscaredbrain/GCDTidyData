@@ -26,6 +26,6 @@ The following artefacts have been created as a part of this project -
 Item | Description | Link to Item
 --- | ---- | ---
 run_analysis.R | File containing R code for doing data processing and generating the clean data set | [R Script Link](https://github.com/hisscaredbrain/GCDTidyData/blob/master/run_analysis.R)
-Tidy Dataset | Clean dataset which is the outcome of Step 5 as described above | [Link](To be updated)
+Tidy Dataset | Clean dataset which is the outcome of Step 5 as described above | [csv Link](https://github.com/hisscaredbrain/GCDTidyData/blob/master/data/tidyData.csv), [txt Link](https://github.com/hisscaredbrain/GCDTidyData/blob/master/data/tidyData.txt)
 CodeBook.md | A code book that describes the variables, the data, and any transformations or work that was performed to clean up the data in Steps 1 - 5 | [CodeBook.md](https://github.com/hisscaredbrain/GCDTidyData/blob/master/CodeBook.md)
 README.md | This document! | [README.md](https://github.com/hisscaredbrain/GCDTidyData/blob/master/README.md)
