@@ -58,5 +58,10 @@ combinedDS <- reshape2::melt(data = combinedDS, id = c("SubjectNum", "Activity")
 combinedDS <- reshape2::dcast(data = combinedDS, 
                               SubjectNum + Activity ~ variable,
                               fun.aggregate = mean)
-data.table::fwrite(x = combinedDS, file = "./data/tidyData.txt", quote = FALSE)
+
+# Submission guidelines explicitly ask for using write.table
+write.table(x = combinedDS, file = "./data/tidyData.txt", row.name = FALSE)
+#data.table::fwrite(x = combinedDS, file = "./data/tidyData.txt", quote = FALSE)
+
+# table stored in csv file for faster import and easy preview
 data.table::fwrite(x = combinedDS, file = "./data/tidyData.csv", quote = FALSE)
