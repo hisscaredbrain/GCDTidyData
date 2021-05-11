@@ -18,7 +18,7 @@ activityLabels <- fread("./data/UCI HAR Dataset/activity_labels.txt",
                         col.names = c("classLabels", "activityName"))
 features <- fread("./data/UCI HAR Dataset/features.txt",
                   col.names = c("index", "featureNames"))
-# Step 2
+# Step 2 (Step 1 follows later)
 # We are primarily interested in features containing mean and standard deviation
 featuresDesired <- grep("(mean|std)\\(\\)", features[, featureNames])
 measurements <- features[featuresDesired, featureNames]
